@@ -23,7 +23,7 @@ client = WeChatClient(app_id, secret)
 
 ## 三、调用云开发接口
 
-云开发接口目前均挂在 `WeChatClient.cloud` 成员实例下，已触发云函数接口为例，可采用如下方式调用：
+云开发接口目前均挂在 `WeChatClient.cloud` 成员实例下，以触发云函数接口为例，可采用如下方式调用：
 
 ```python
 result = client.cloud.invoke_cloud_function('env_name', 'login', '{}')
